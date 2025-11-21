@@ -19,28 +19,28 @@ This directory contains the official C2PA (Coalition for Content Provenance and 
 - **Translation Status**: 🔄 Beta (AI-assisted, needs native review)
 - **Translation Method**: DeepL + community review
 - **Version**: 2.2
-- **Last Updated**: 2024
+- **Last Updated**: 2025
 
 ### 日本語 (Japanese)
 - **File**: [C2PA_Specification_ja.pdf](specifications/C2PA_Specification_ja.pdf)
 - **Translation Status**: 🔄 Beta (AI-assisted, needs native review)
 - **Translation Method**: DeepL + community review
 - **Version**: 2.2
-- **Last Updated**: 2024
+- **Last Updated**: 2025
 
 ### Deutsch (German)
 - **File**: [C2PA_Specification_de.pdf](specifications/C2PA_Specification_de.pdf)
 - **Translation Status**: 🔄 Beta (AI-assisted, needs native review)
 - **Translation Method**: DeepL + community review
 - **Version**: 2.2
-- **Last Updated**: 2024
+- **Last Updated**: 2025
 
 ### Français (French)
 - **File**: [C2PA_Specification_fr.pdf](specifications/C2PA_Specification_fr.pdf)
 - **Translation Status**: 🔄 Beta (AI-assisted, needs native review)
 - **Translation Method**: DeepL + community review
 - **Version**: 2.2
-- **Last Updated**: 2024
+- **Last Updated**: 2025
 
 ## 🚧 Planned Translations
 

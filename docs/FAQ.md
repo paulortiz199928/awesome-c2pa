@@ -153,7 +153,7 @@ c2patool image.jpg
 - Certificate from trusted CA (DigiCert, GlobalSign, etc.)
 - Or self-signed cert for testing
 
-**See:** [Quick Start Guide](doc/Quick_Start_Guide.md) for step-by-step instructions
+**See:** [Quick Start Guide](Quick_Start_Guide.md) for step-by-step instructions
 
 ---
 
@@ -161,23 +161,26 @@ c2patool image.jpg
 
 ### 10. What is Nikon C2PA?
 
-**Short answer:** Nikon cameras (Z9, Z8) can sign photos with C2PA metadata at capture time, proving the image came from that specific camera.
+**Short answer:** Nikon is developing C2PA support for their cameras. The Z6 III is planned to receive C2PA firmware in 2025, enabling in-camera signing of photos with provenance metadata.
 
-**Features:**
+**Features (when available):**
 - In-camera signing (no post-processing needed)
 - Records camera model, serial number, settings, GPS
 - Private key stored in secure hardware
 - Verifies authenticity from moment of capture
 - Ideal for photojournalism and legal evidence
 
+**Note:** As of November 2025, Z9 and Z8 do not yet support C2PA despite earlier announcements.
+
 ### 11. Which cameras support C2PA?
 
 **Currently available:**
-- **Nikon**: Z9, Z8 (with firmware update)
 - **Leica**: M11-P, SL3
-- **Sony**: Alpha 7 and Alpha 9 series (with firmware update)
+- **Sony**: Alpha 1, A9 III, A7S III, A7 IV (with firmware update)
 
-**Coming soon:** Canon exploring implementation
+**In development:**
+- **Nikon**: Z6 III (firmware planned for 2025)
+- **Canon**: Exploring implementation
 
 ### 12. Which software supports C2PA?
 
@@ -317,7 +320,7 @@ c2patool image.jpg
 
 **Social platforms:** Meta, Twitter/X (exploring)
 
-**See:** [Organizations section in README](README.md#organizations--ecosystem)
+**See:** [Organizations section in README](../README.md#organizations--ecosystem)
 
 ### 20. Is C2PA mandatory?
 
@@ -484,10 +487,10 @@ C2PA works normally. The manifest travels with the file whether it's public or b
 ## Getting Started
 
 **New to C2PA?**
-1. Read: [What is C2PA?](README.md#what-is-c2pa) in main README
+1. Read: [What is C2PA?](../README.md#what-is-c2pa) in main README
 2. Try: [Verify a sample](https://contentcredentials.org/verify)
-3. Learn: [Quick Start Guide](doc/Quick_Start_Guide.md)
-4. Build: Check [Tools & Libraries](README.md#tools--libraries)
+3. Learn: [Quick Start Guide](Quick_Start_Guide.md)
+4. Build: Check [Tools & Libraries](../README.md#tools--libraries)
 
 **Want to contribute?**
 - See: [CONTRIBUTING.md](CONTRIBUTING.md)

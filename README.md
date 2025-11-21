@@ -45,7 +45,7 @@ The C2PA specification version 2.2 is available in multiple languages. These tra
 
 | Language | Document | Status | Method | Last Updated |
 |----------|----------|--------|--------|--------------|
-| 🇬🇧 English | [C2PA Specification 2.2](docs/specifications/C2PA_Specification.pdf) | ✅ Official | C2PA Org | 2025 |
+| 🇬🇧 English | [C2PA Specification 2.2](docs/specifications/C2PA_Specification.pdf) | ✅ Official | C2PA Org | May 2025 |
 | 🇨🇳 简体中文 | [C2PA 规范 2.2](docs/specifications/C2PA_Specification_zh-Hans.pdf) | 🔄 Beta | AI + Review | 2025 |
 | 🇯🇵 日本語 | [C2PA 仕様 2.2](docs/specifications/C2PA_Specification_ja.pdf) | 🔄 Beta | AI + Review | 2025 |
 | 🇩🇪 Deutsch | [C2PA Spezifikation 2.2](docs/specifications/C2PA_Specification_de.pdf) | 🔄 Beta | AI + Review | 2025 |
@@ -98,7 +98,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 <details>
 <summary><b>Which cameras and software support C2PA?</b></summary>
 
-**Cameras**: Nikon (Z9, Z8), Leica (M11-P, SL3), Sony (Alpha series) can sign photos at capture time.
+**Cameras**: Leica (M11-P, SL3), Sony (Alpha 1, A9 III, A7S III, A7 IV), Nikon (Z6 III planned for 2025) can sign photos at capture time.
 
 **Software**: Adobe Photoshop/Lightroom, Capture One, and many open-source tools.
 
