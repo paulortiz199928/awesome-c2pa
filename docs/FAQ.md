@@ -119,12 +119,12 @@ C2PA focuses on *transparency when present*, watermarks on *persistence when att
 ### 7. What file formats does C2PA support?
 
 **Currently supported:**
-- **Images**: JPEG, PNG, WebP, AVIF, HEIC/HEIF
-- **Video**: MP4, MOV
-- **Audio**: WAV (MP3 in development)
+- **Images**: JPEG, PNG, WebP, AVIF, HEIC/HEIF, TIFF, DNG, SVG, GIF
+- **Video**: MP4, MOV, AVI
+- **Audio**: WAV, MP3, M4A
 - **Documents**: PDF
 
-**In development:** WebM, additional audio formats, SVG
+**In development:** WebM, additional formats
 
 ### 8. How do I verify C2PA content?
 

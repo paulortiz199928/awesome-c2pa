@@ -119,12 +119,12 @@ C2PA 侧重于*存在时的透明度*，水印侧重于*受攻击时的持久性
 ### 7. C2PA 支持哪些文件格式？
 
 **目前支持：**
-- **图像**：JPEG、PNG、WebP、AVIF、HEIC/HEIF
-- **视频**：MP4、MOV
-- **音频**：WAV（MP3 开发中）
+- **图像**：JPEG、PNG、WebP、AVIF、HEIC/HEIF、TIFF、DNG、SVG、GIF
+- **视频**：MP4、MOV、AVI
+- **音频**：WAV、MP3、M4A
 - **文档**：PDF
 
-**开发中：** WebM、其他音频格式、SVG
+**开发中：** WebM、其他格式
 
 ### 8. 如何验证 C2PA 内容？
 
