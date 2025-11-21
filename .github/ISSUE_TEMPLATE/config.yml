@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question
+    url: https://github.com/c2pa-org/specifications/discussions
+    about: Ask questions about C2PA technical details in the official discussions
+  - name: C2PA Official Website
+    url: https://c2pa.org
+    about: Visit the official C2PA website for general information

@@ -1,0 +1,77 @@
+# Internal project management files
+.github-setup.md
+PROMOTION.md
+claude.md
+
+# Claude Code configuration
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Environment files (if any)
+.env
+.env.local
+
+# Build artifacts (if generating any)
+dist/
+build/
+*.pyc
+__pycache__/
+node_modules/
+
+# Test certificates/keys (security)
+*.pem
+*.key
+*.crt
+test-cert.*
+test-key.*
+
+# Personal notes
+notes.md
+TODO.md
+scratch.md
