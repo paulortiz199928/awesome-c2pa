@@ -193,12 +193,6 @@ Contributors who significantly improve translations will be:
 
 Quality improvements are highly valued contributions!
 
-## 📞 Contact
-
-- **General questions**: [GitHub Discussions](../../discussions)
-- **Report errors**: [Translation Issue Template](../../issues/new?template=translation.md)
-- **Coordinate review**: Comment on open translation issues
-
 ---
 
 **Thank you for helping make C2PA accessible worldwide!** 🌍
