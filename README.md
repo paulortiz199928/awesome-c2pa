@@ -36,7 +36,6 @@ C2PA is an open technical standard providing publishers, creators, and consumers
 - [News & Updates](#-news--updates)
 - [Community](#-community)
 - [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -46,11 +45,11 @@ The C2PA specification version 2.2 is available in multiple languages. These tra
 
 | Language | Document | Status | Method | Last Updated |
 |----------|----------|--------|--------|--------------|
-| 🇬🇧 English | [C2PA Specification 2.2](docs/specifications/C2PA_Specification.pdf) | ✅ Official | C2PA Org | 2024 |
-| 🇨🇳 简体中文 | [C2PA 规范 2.2](docs/specifications/C2PA_Specification_zh-Hans.pdf) | 🔄 Beta | AI + Review | 2024 |
-| 🇯🇵 日本語 | [C2PA 仕様 2.2](docs/specifications/C2PA_Specification_ja.pdf) | 🔄 Beta | AI + Review | 2024 |
-| 🇩🇪 Deutsch | [C2PA Spezifikation 2.2](docs/specifications/C2PA_Specification_de.pdf) | 🔄 Beta | AI + Review | 2024 |
-| 🇫🇷 Français | [Spécification C2PA 2.2](docs/specifications/C2PA_Specification_fr.pdf) | 🔄 Beta | AI + Review | 2024 |
+| 🇬🇧 English | [C2PA Specification 2.2](docs/specifications/C2PA_Specification.pdf) | ✅ Official | C2PA Org | 2025 |
+| 🇨🇳 简体中文 | [C2PA 规范 2.2](docs/specifications/C2PA_Specification_zh-Hans.pdf) | 🔄 Beta | AI + Review | 2025 |
+| 🇯🇵 日本語 | [C2PA 仕様 2.2](docs/specifications/C2PA_Specification_ja.pdf) | 🔄 Beta | AI + Review | 2025 |
+| 🇩🇪 Deutsch | [C2PA Spezifikation 2.2](docs/specifications/C2PA_Specification_de.pdf) | 🔄 Beta | AI + Review | 2025 |
+| 🇫🇷 Français | [Spécification C2PA 2.2](docs/specifications/C2PA_Specification_fr.pdf) | 🔄 Beta | AI + Review | 2025 |
 | 🇰🇷 한국어 | Coming soon | 🚧 Planned | - | - |
 | 🇪🇸 Español | Coming soon | 🚧 Planned | - | - |
 | 🇵🇹 Português | Coming soon | 🚧 Planned | - | - |
@@ -116,7 +115,6 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 - [C2PA Specifications](https://c2pa.org/specifications/specifications/2.2/index.html) - Official specification portal (v2.2)
 - [C2PA GitHub Organization](https://github.com/c2pa-org) - Official GitHub repositories
 - [Content Authenticity Initiative](https://contentauthenticity.org/) - Adobe-led initiative supporting C2PA
-- [C2PA Trust List](https://opensource.contentauthenticity.org/docs/verify-known-cert-list/) - List of trusted certificate authorities
 
 ---
 
@@ -193,13 +191,6 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 - **AI Image Generators**: Labeling AI-generated content (Midjourney, DALL-E)
 - **Stock Photography**: Proving original authorship (Adobe Stock, Shutterstock)
 
-### Demo Projects
-
-- [C2PA Demo Gallery](https://contentauthenticity.org/examples) - Sample images with C2PA manifests
-- [Verify Tool Demo](https://contentcredentials.org/verify) - Try verifying C2PA content
-- [Interactive Manifest Explorer](https://opensource.contentauthenticity.org) - Explore manifest structure
-
----
 
 ## 🏢 Organizations & Ecosystem
 
@@ -216,9 +207,10 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 
 ### Adopters & Partners
 
+- **GenAI Providers**: [OpenAI](https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/), [Google](https://blog.google/technology/ai/google-gen-ai-content-transparency-c2pa/), [Meta](https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads)
 - **Camera Manufacturers**: Leica, Nikon, Sony, Canon
 - **Software Companies**: Adobe, Microsoft, Capture One
-- **News Organizations**: BBC, New York Times, Reuters (piloting)
+- **News Organizations**: BBC, New York Times, Reuters
 - **Social Platforms**: Exploring integration
 - **Certification Authorities**: DigiCert, GlobalSign, and others
 
@@ -226,7 +218,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 
 ## 📰 News & Updates
 
-- [C2PA v2.2 Specification Released](https://c2pa.org) - Latest version (2024)
+- [C2PA v2.2 Specification Released](https://c2pa.org) - Latest version (2025)
 - [Content Authenticity Initiative Milestones](https://contentauthenticity.org/news) - Industry adoption updates
 - [C2PA on X/Twitter](https://twitter.com/C2PA_Coalition) - Follow for real-time updates
 
@@ -235,10 +227,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🤝 Community
 
 ### Get Involved
-
-- [C2PA GitHub Discussions](https://github.com/c2pa-org/specifications/discussions) - Ask questions and share ideas
-- [C2PA Official Website](https://c2pa.org) - Latest news and community information
-- [Content Authenticity Initiative](https://contentauthenticity.org/members) - Join the broader movement
+- [Awesome C2PA GitHub Issues](https://github.com/paulortiz199928/awesome-c2pa/issues) - Ask questions and share ideas
 
 ### Contribute to This Project
 
@@ -247,12 +236,6 @@ We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for deta
 - Translating specifications
 - Improving documentation
 - Reporting issues
-
-### Related Awesome Lists
-
-- [Awesome Digital Forensics](https://github.com/Correia-jpv/fucking-awesome-digital-forensics)
-- [Awesome AI Security](https://github.com/DeepSpaceHarbor/Awesome-AI-Security)
-- [Awesome Cryptography](https://github.com/sobolevn/awesome-cryptography)
 
 ---
 
@@ -274,14 +257,6 @@ We accept resources that are:
 - Well-documented
 - Relevant to C2PA implementation or understanding
 - Open source (preferred) or freely accessible
-
----
-
-## 📄 License
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-This list is licensed under CC0 1.0 Universal. The C2PA specifications and translations are subject to their respective licenses.
 
 ---
 

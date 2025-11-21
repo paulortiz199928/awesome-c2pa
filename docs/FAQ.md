@@ -496,8 +496,7 @@ C2PA works normally. The manifest travels with the file whether it's public or b
 - Share use cases
 
 **More questions?**
-- Open an issue: [GitHub Issues](../../issues)
-- Join discussion: [GitHub Discussions](../../discussions)
+- Open an issue: [GitHub Issues](https://github.com/paulortiz199928/awesome-c2pa/issues)
 - Official C2PA: https://c2pa.org
 
 ---
