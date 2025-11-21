@@ -30,7 +30,7 @@ Original Photo → [Add C2PA Manifest] → Signed Photo
               Contains metadata:
               • Creator: John Doe
               • Camera: Nikon Z9
-              • Date: 2024-11-21
+              • Date: 2025-11-21
               • GPS: 37.7749°N, 122.4194°W
               • Signature: ✓ Valid
 ```
@@ -113,7 +113,7 @@ File: photo.jpg
 Status: ✓ Valid C2PA signature
 
 Creator: John Doe (john@example.com)
-Created: 2024-11-21T10:30:00Z
+Created: 2025-11-21T10:30:00Z
 Camera: Nikon Z9
 Signature: Valid
 Certificate: DigiCert
@@ -508,4 +508,4 @@ https://contentcredentials.org/verify
 
 ---
 
-*Last updated: November 2024*
+*Last updated: November 2025

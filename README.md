@@ -295,4 +295,4 @@ This list is licensed under CC0 1.0 Universal. The C2PA specifications and trans
 
 **[⬆ Back to Top](#contents)**
 
-*Last Updated: November 2024 | Maintained by the community*
+*Last Updated: November 2025 | Maintained by the community*

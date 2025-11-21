@@ -502,4 +502,4 @@ C2PA works normally. The manifest travels with the file whether it's public or b
 
 ---
 
-*Last updated: November 2024*
+*Last updated: November 2025*
