@@ -185,7 +185,9 @@ c2patool image.jpg
 ### 12. Which software supports C2PA?
 
 **Creating C2PA content:**
-- Adobe Photoshop, Lightroom, Premiere Pro
+- Adobe Firefly (automatic)
+- Adobe Photoshop, Lightroom (manual opt-in during export, JPEG only, Early Access)
+- Adobe Premiere Pro
 - Capture One (via plugin)
 - c2patool (command-line)
 
@@ -203,7 +205,8 @@ c2patool image.jpg
 **Not automatically.** C2PA doesn't detect AI content - it records *what the creator declares*.
 
 **How it works:**
-- AI tools (like DALL-E, Midjourney) can add C2PA manifest stating "AI-generated"
+- AI tools (like DALL-E, Adobe Firefly) can add C2PA manifest stating "AI-generated"
+- Some tools (like Midjourney) use simpler IPTC metadata without C2PA verification
 - Relies on honest disclosure by the AI service
 - Proves the content came from that service (if signed)
 - Doesn't detect undeclared AI content
@@ -316,9 +319,14 @@ c2patool image.jpg
 
 **Media organizations:** BBC, Reuters, New York Times (piloting)
 
-**AI companies:** OpenAI, Midjourney, Stability AI (exploring)
+**AI companies:**
+- OpenAI (DALL-E 3 with C2PA since Feb 2024)
+- Stability AI (exploring)
+- Note: Midjourney uses basic IPTC metadata but has not implemented full C2PA
 
-**Social platforms:** Meta, Twitter/X (exploring)
+**Social platforms:**
+- Meta (C2PA steering committee member since Sept 2024, rolling out labeling)
+- Twitter/X (exploring)
 
 **See:** [Organizations section in README](../README.md#organizations--ecosystem)
 
@@ -338,7 +346,9 @@ c2patool image.jpg
 
 **Implementation:**
 - Open-source SDKs: Free
-- Certificate from CA: ~$50-500/year (like SSL certs)
+- Certificate from CA: ~$200-500/year
+  - S/MIME certificates (simplest): $200-300/year
+  - Document signing certificates: $300-500/year
 - HSM for key storage: $500-5000+ (optional)
 - Development time: Varies
 

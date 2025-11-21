@@ -185,7 +185,9 @@ c2patool image.jpg
 ### 12. 哪些软件支持 C2PA？
 
 **创建 C2PA 内容：**
-- Adobe Photoshop、Lightroom、Premiere Pro
+- Adobe Firefly（自动）
+- Adobe Photoshop、Lightroom（导出时手动选择，仅 JPEG，早期访问版）
+- Adobe Premiere Pro
 - Capture One（通过插件）
 - c2patool（命令行）
 
@@ -203,7 +205,8 @@ c2patool image.jpg
 **不能自动检测。** C2PA 不检测 AI 内容 - 它记录*创作者声明的内容*。
 
 **工作原理：**
-- AI 工具（如 DALL-E、Midjourney）可以添加声明"AI 生成"的 C2PA 清单
+- AI 工具（如 DALL-E、Adobe Firefly）可以添加声明"AI 生成"的 C2PA 清单
+- 一些工具（如 Midjourney）使用更简单的 IPTC 元数据，没有 C2PA 验证
 - 依赖 AI 服务的诚实披露
 - 证明内容来自该服务（如果签名）
 - 不检测未声明的 AI 内容
@@ -316,9 +319,14 @@ c2patool image.jpg
 
 **媒体组织：** BBC、路透社、纽约时报（试点）
 
-**AI 公司：** OpenAI、Midjourney、Stability AI（探索中）
+**AI 公司：**
+- OpenAI（DALL-E 3 自 2024 年 2 月起支持 C2PA）
+- Stability AI（探索中）
+- 注意：Midjourney 使用基本 IPTC 元数据，但尚未实现完整的 C2PA
 
-**社交平台：** Meta、Twitter/X（探索中）
+**社交平台：**
+- Meta（2024 年 9 月成为 C2PA 指导委员会成员，正在推出标记功能）
+- Twitter/X（探索中）
 
 **参见：** [README 中的组织部分](../README_zh-Hans.md#组织和生态系统)
 
@@ -338,7 +346,9 @@ c2patool image.jpg
 
 **实现：**
 - 开源 SDK：免费
-- CA 证书：约 50-500 美元/年（类似 SSL 证书）
+- CA 证书：约 200-500 美元/年
+  - S/MIME 证书（最简单）：200-300 美元/年
+  - 文档签名证书：300-500 美元/年
 - 密钥存储的 HSM：500-5000+ 美元（可选）
 - 开发时间：各异
 
