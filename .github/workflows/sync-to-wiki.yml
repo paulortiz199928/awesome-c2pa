@@ -32,11 +32,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g js-yaml
+          npm install js-yaml
 
       - name: Sync content files
         run: |
-          node << 'EOF'
+          NODE_PATH=$(npm root) node << 'EOF'
           const fs = require('fs');
           const path = require('path');
           const yaml = require('js-yaml');
