@@ -53,13 +53,17 @@ Signed Photo → [Edit in Photoshop] → New Signed Photo
 
 **No installation required!**
 
-1. Visit https://contentcredentials.org/verify
-2. Drag and drop any image/video/document
-3. View provenance information:
+1. **Visit the verification tool**: Open your web browser and navigate to https://contentcredentials.org/verify to access the official C2PA verification tool.
+
+2. **Upload your media file**: Drag and drop your image, video, or document onto the verification page, or click to browse and select the file from your device.
+
+3. **Review provenance information**: Examine the displayed information including:
    - Creator identity
+   - Creation date
    - Editing history
-   - Signature status
-   - Original content (if available)
+   - Tools and software used
+
+4. **Verify signature status**: Check that the signature shows as "Valid" with a green checkmark, confirming the content has not been tampered with since signing.
 
 **Try it now** with sample images from: https://contentauthenticity.org/examples
 
