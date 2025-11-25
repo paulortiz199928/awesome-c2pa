@@ -4,9 +4,10 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/**'
+      - 'docs/guides/**'
+      - 'docs/specifications/**'
+      - 'i18n/**'
       - 'README.md'
-      - 'README_zh-Hans.md'
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -41,7 +42,18 @@ jobs:
           const path = require('path');
           const yaml = require('js-yaml');
 
-          // 文件映射配置 - 匹配 awesome-c2pa 的实际文件结构
+          // 语言配置 - 匹配 awesome-c2pa i18n 目录结构和 c2pa-wiki locale 配置
+          const LANGUAGES = [
+            { code: 'zh-Hans', wikiLocale: 'zh-cn', label: '简体中文' },
+            { code: 'zh-Hant', wikiLocale: 'zh-tw', label: '繁體中文' },
+            { code: 'ja', wikiLocale: 'ja', label: '日本語' },
+            { code: 'ko', wikiLocale: 'ko', label: '한국어' },
+            { code: 'de', wikiLocale: 'de', label: 'Deutsch' },
+            { code: 'fr', wikiLocale: 'fr', label: 'Français' },
+            { code: 'ru', wikiLocale: 'ru', label: 'Русский' },
+          ];
+
+          // 文件映射配置 - 匹配 awesome-c2pa 的新目录结构
           const FILE_MAPPINGS = [
             // 英文首页
             {
@@ -61,47 +73,73 @@ jobs:
                 }
               })
             },
-            // 中文首页
+            // 英文快速入门指南 (新路径: docs/guides/)
             {
-              source: 'README_zh-Hans.md',
-              target: 'wiki/src/content/docs/zh-cn/index.md',
-              transform: (content) => addFrontmatter(content, {
-                title: 'C2PA Wiki',
-                description: '内容来源和真实性联盟（C2PA）综合文档',
-                template: 'splash',
-                hero: {
-                  title: 'C2PA Wiki',
-                  tagline: '内容来源和真实性综合指南',
-                  actions: [
-                    { text: '快速入门', link: '/zh-cn/getting-started/quick-start/', icon: 'right-arrow', variant: 'primary' },
-                    { text: '查看规范', link: '/zh-cn/specifications/', icon: 'external', variant: 'secondary' }
-                  ]
-                }
-              })
-            },
-            // 英文快速入门指南
-            {
-              source: 'docs/Quick_Start_Guide.md',
+              source: 'docs/guides/quick-start.md',
               target: 'wiki/src/content/docs/getting-started/quick-start.md'
             },
-            // 英文常见问题
+            // 英文常见问题 (新路径: docs/guides/)
             {
-              source: 'docs/FAQ.md',
+              source: 'docs/guides/faq.md',
               target: 'wiki/src/content/docs/getting-started/faq.md'
-            },
-            // 中文快速入门指南
-            {
-              source: 'docs/Quick_Start_Guide_zh-Hans.md',
-              target: 'wiki/src/content/docs/zh-cn/getting-started/quick-start.md'
-            },
-            // 中文常见问题
-            {
-              source: 'docs/FAQ_zh-Hans.md',
-              target: 'wiki/src/content/docs/zh-cn/getting-started/faq.md'
             },
           ];
 
-          // PDF 规范文件 - awesome-c2pa 中的实际路径
+          // 为每种语言添加翻译文件映射
+          LANGUAGES.forEach(lang => {
+            const heroActions = lang.code === 'zh-Hans' ? [
+              { text: '快速入门', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: '查看规范', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ] : lang.code === 'zh-Hant' ? [
+              { text: '快速入門', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: '查看規範', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ] : lang.code === 'ja' ? [
+              { text: 'クイックスタート', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: '仕様を見る', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ] : lang.code === 'ko' ? [
+              { text: '빠른 시작', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: '사양 보기', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ] : lang.code === 'de' ? [
+              { text: 'Schnellstart', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: 'Spezifikationen anzeigen', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ] : lang.code === 'fr' ? [
+              { text: 'Démarrage rapide', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: 'Voir les spécifications', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ] : [
+              { text: 'Быстрый старт', link: `/${lang.wikiLocale}/getting-started/quick-start/`, icon: 'right-arrow', variant: 'primary' },
+              { text: 'Посмотреть спецификации', link: `/${lang.wikiLocale}/specifications/`, icon: 'external', variant: 'secondary' }
+            ];
+
+            FILE_MAPPINGS.push(
+              // README (首页)
+              {
+                source: `i18n/${lang.code}/README.md`,
+                target: `wiki/src/content/docs/${lang.wikiLocale}/index.md`,
+                transform: (content) => addFrontmatter(content, {
+                  title: 'C2PA Wiki',
+                  description: `Content Provenance and Authenticity Documentation - ${lang.label}`,
+                  template: 'splash',
+                  hero: {
+                    title: 'C2PA Wiki',
+                    tagline: 'Content Provenance and Authenticity',
+                    actions: heroActions
+                  }
+                })
+              },
+              // Quick Start
+              {
+                source: `i18n/${lang.code}/quick-start.md`,
+                target: `wiki/src/content/docs/${lang.wikiLocale}/getting-started/quick-start.md`
+              },
+              // FAQ
+              {
+                source: `i18n/${lang.code}/faq.md`,
+                target: `wiki/src/content/docs/${lang.wikiLocale}/getting-started/faq.md`
+              }
+            );
+          });
+
+          // PDF 规范文件 - 保持不变
           const PDF_FILES = [
             'docs/specifications/C2PA_Specification.pdf',
             'docs/specifications/C2PA_Specification_zh-Hans.pdf',
@@ -109,6 +147,8 @@ jobs:
             'docs/specifications/C2PA_Specification_de.pdf',
             'docs/specifications/C2PA_Specification_fr.pdf',
           ];
+
+          console.log(`📊 Total file mappings: ${FILE_MAPPINGS.length} (1 English + ${LANGUAGES.length} translations × 3 files each)`);
 
           function addFrontmatter(content, frontmatter) {
             // 移除现有的 frontmatter（如果有）
