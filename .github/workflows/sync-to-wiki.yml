@@ -1,0 +1,229 @@
+name: Sync to C2PA Wiki
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'README.md'
+      - 'README_zh-Hans.md'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout awesome-c2pa
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout c2pa-wiki
+        uses: actions/checkout@v4
+        with:
+          repository: paulortiz199928/c2pa-wiki
+          token: ${{ secrets.WIKI_SYNC_TOKEN }}
+          path: wiki
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm install -g js-yaml
+
+      - name: Sync content files
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const yaml = require('js-yaml');
+
+          // 文件映射配置 - 匹配 awesome-c2pa 的实际文件结构
+          const FILE_MAPPINGS = [
+            // 英文首页
+            {
+              source: 'README.md',
+              target: 'wiki/src/content/docs/index.md',
+              transform: (content) => addFrontmatter(content, {
+                title: 'C2PA Wiki',
+                description: 'Your comprehensive guide to Content Provenance and Authenticity',
+                template: 'splash',
+                hero: {
+                  title: 'C2PA Wiki',
+                  tagline: 'Your comprehensive guide to Content Provenance and Authenticity',
+                  actions: [
+                    { text: 'Quick Start', link: '/getting-started/quick-start/', icon: 'right-arrow', variant: 'primary' },
+                    { text: 'View Specifications', link: '/specifications/', icon: 'external', variant: 'secondary' }
+                  ]
+                }
+              })
+            },
+            // 中文首页
+            {
+              source: 'README_zh-Hans.md',
+              target: 'wiki/src/content/docs/zh-cn/index.md',
+              transform: (content) => addFrontmatter(content, {
+                title: 'C2PA Wiki',
+                description: '内容来源和真实性联盟（C2PA）综合文档',
+                template: 'splash',
+                hero: {
+                  title: 'C2PA Wiki',
+                  tagline: '内容来源和真实性综合指南',
+                  actions: [
+                    { text: '快速入门', link: '/zh-cn/getting-started/quick-start/', icon: 'right-arrow', variant: 'primary' },
+                    { text: '查看规范', link: '/zh-cn/specifications/', icon: 'external', variant: 'secondary' }
+                  ]
+                }
+              })
+            },
+            // 英文快速入门指南
+            {
+              source: 'docs/Quick_Start_Guide.md',
+              target: 'wiki/src/content/docs/getting-started/quick-start.md'
+            },
+            // 英文常见问题
+            {
+              source: 'docs/FAQ.md',
+              target: 'wiki/src/content/docs/getting-started/faq.md'
+            },
+            // 中文快速入门指南
+            {
+              source: 'docs/Quick_Start_Guide_zh-Hans.md',
+              target: 'wiki/src/content/docs/zh-cn/getting-started/quick-start.md'
+            },
+            // 中文常见问题
+            {
+              source: 'docs/FAQ_zh-Hans.md',
+              target: 'wiki/src/content/docs/zh-cn/getting-started/faq.md'
+            },
+          ];
+
+          // PDF 规范文件 - awesome-c2pa 中的实际路径
+          const PDF_FILES = [
+            'docs/specifications/C2PA_Specification.pdf',
+            'docs/specifications/C2PA_Specification_zh-Hans.pdf',
+            'docs/specifications/C2PA_Specification_ja.pdf',
+            'docs/specifications/C2PA_Specification_de.pdf',
+            'docs/specifications/C2PA_Specification_fr.pdf',
+          ];
+
+          function addFrontmatter(content, frontmatter) {
+            // 移除现有的 frontmatter（如果有）
+            content = content.replace(/^---\n[\s\S]*?\n---\n/, '');
+
+            // 添加新的 frontmatter
+            const fm = yaml.dump(frontmatter);
+            return `---\n${fm}---\n\n${content}`;
+          }
+
+          function ensureDir(filePath) {
+            const dir = path.dirname(filePath);
+            if (!fs.existsSync(dir)) {
+              fs.mkdirSync(dir, { recursive: true });
+            }
+          }
+
+          function syncFile(mapping) {
+            if (!fs.existsSync(mapping.source)) {
+              console.log(`⚠️  Source not found: ${mapping.source}`);
+              return false;
+            }
+
+            let content = fs.readFileSync(mapping.source, 'utf8');
+
+            // 应用转换函数（如果有）
+            if (mapping.transform) {
+              content = mapping.transform(content);
+            }
+
+            ensureDir(mapping.target);
+            fs.writeFileSync(mapping.target, content);
+            console.log(`✅ Synced: ${mapping.source} → ${mapping.target}`);
+            return true;
+          }
+
+          function syncPdfFiles() {
+            PDF_FILES.forEach(pdfPath => {
+              if (!fs.existsSync(pdfPath)) {
+                console.log(`⚠️  PDF not found: ${pdfPath}`);
+                return;
+              }
+
+              // 提取文件名并放到 wiki/public/specifications/
+              const fileName = path.basename(pdfPath);
+              const targetPath = path.join('wiki/public/specifications', fileName);
+              ensureDir(targetPath);
+              fs.copyFileSync(pdfPath, targetPath);
+              console.log(`✅ Synced PDF: ${pdfPath} → ${targetPath}`);
+            });
+          }
+
+          // 执行同步
+          console.log('🚀 Starting content sync from awesome-c2pa...\n');
+
+          let syncedCount = 0;
+          FILE_MAPPINGS.forEach(mapping => {
+            if (syncFile(mapping)) syncedCount++;
+          });
+
+          console.log('\n📄 Syncing PDF files...\n');
+          syncPdfFiles();
+
+          console.log(`\n✨ Sync completed! ${syncedCount} Markdown files synced.`);
+          EOF
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          cd wiki
+          if [[ -n $(git status -s) ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "📝 Changes detected"
+            git status -s
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "✅ No changes to sync"
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.WIKI_SYNC_TOKEN }}
+          path: wiki
+          commit-message: |
+            sync: update content from awesome-c2pa
+
+            Auto-synced from awesome-c2pa repository
+            Source commit: ${{ github.sha }}
+
+            🤖 Generated with automated sync workflow
+          branch: sync/awesome-c2pa-${{ github.run_number }}
+          title: "🔄 Sync content from awesome-c2pa"
+          body: |
+            ## 📦 Content Sync from awesome-c2pa
+
+            This PR contains automatic content updates from the [awesome-c2pa](https://github.com/paulortiz199928/awesome-c2pa) repository.
+
+            ### Changes
+            - Source commit: [`${{ github.sha }}`](https://github.com/paulortiz199928/awesome-c2pa/commit/${{ github.sha }})
+            - Synced files:
+              - ✅ README (English & Chinese)
+              - ✅ Quick Start Guide (English & Chinese)
+              - ✅ FAQ (English & Chinese)
+              - ✅ PDF specifications (5 languages)
+
+            ### Review Checklist
+            - [ ] Content is correctly formatted
+            - [ ] Links are working
+            - [ ] Images are properly displayed
+            - [ ] No broken references
+
+            🤖 This PR was created automatically by the sync workflow.
+          labels: |
+            automated
+            content-sync
+          assignees: paulortiz199928
