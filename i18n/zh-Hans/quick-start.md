@@ -341,18 +341,18 @@ c2patool edited_photo.jpg \
 ### 了解更多
 
 **理解规范：**
-- [英语](specifications/C2PA_Specification.pdf)
-- [中文](specifications/C2PA_Specification_zh-Hans.pdf)
-- [日本語](specifications/C2PA_Specification_ja.pdf)
-- [Deutsch](specifications/C2PA_Specification_de.pdf)
+- [英语](../../docs/specifications/C2PA_Specification.pdf)
+- [中文](../../docs/specifications/C2PA_Specification_zh-Hans.pdf)
+- [日本語](../../docs/specifications/C2PA_Specification_ja.pdf)
+- [Deutsch](../../docs/specifications/C2PA_Specification_de.pdf)
 
 **探索工具：**
-- [工具和库](../README_zh-Hans.md#工具和库) - 所有主要语言的 SDK
+- [工具和库](README.md#工具和库) - 所有主要语言的 SDK
 - [官方文档](https://opensource.contentauthenticity.org/docs)
 
 **常见问题：**
-- [FAQ](FAQ_zh-Hans.md) - 25+ 个常见问题
-- [GitHub 讨论](https://github.com/c2pa-org/specifications/discussions)
+- [FAQ](faq.md) - 25+ 个常见问题
+- [GitHub 讨论](https://github.com/c2pa-org/../../docs/specifications/discussions)
 
 ### 教程和示例
 
@@ -429,12 +429,12 @@ c2patool edited_photo.jpg \
 ### 加入社区
 
 **获取帮助：**
-- [GitHub Issues](https://github.com/c2pa-org/specifications/issues) - 错误报告
-- [GitHub 讨论](https://github.com/c2pa-org/specifications/discussions) - 问题
+- [GitHub Issues](https://github.com/c2pa-org/../../docs/specifications/issues) - 错误报告
+- [GitHub 讨论](https://github.com/c2pa-org/../../docs/specifications/discussions) - 问题
 - [C2PA 网站](https://c2pa.org) - 官方资源
 
 **贡献：**
-- [awesome-c2pa](../README_zh-Hans.md) - 添加资源、翻译文档
+- [awesome-c2pa](README.md) - 添加资源、翻译文档
 - [C2PA 实现](https://github.com/contentauth) - 贡献代码
 - [内容真实性倡议](https://contentauthenticity.org) - 加入运动
 
@@ -504,7 +504,7 @@ https://contentcredentials.org/verify
 
 **准备好开始了吗？** 选择上面的方法并开始！
 
-**有问题？** 查看 [FAQ](FAQ_zh-Hans.md) 或[提交 issue](https://github.com/paulortiz199928/awesome-c2pa/issues)。
+**有问题？** 查看 [FAQ](faq.md) 或[提交 issue](https://github.com/paulortiz199928/awesome-c2pa/issues)。
 
 ---
 

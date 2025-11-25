@@ -153,7 +153,7 @@ c2patool image.jpg
 - 来自受信任 CA 的证书（DigiCert、GlobalSign 等）
 - 或用于测试的自签名证书
 
-**参见：** [快速入门指南](Quick_Start_Guide_zh-Hans.md) 获取分步说明
+**参见：** [快速入门指南](quick-start.md) 获取分步说明
 
 ---
 
@@ -328,7 +328,7 @@ c2patool image.jpg
 - Meta（2024 年 9 月成为 C2PA 指导委员会成员，正在推出标记功能）
 - Twitter/X（探索中）
 
-**参见：** [README 中的组织部分](../README_zh-Hans.md#组织和生态系统)
+**参见：** [README 中的组织部分](README.md#组织和生态系统)
 
 ### 20. C2PA 是强制性的吗？
 
@@ -497,13 +497,13 @@ C2PA 正常工作。清单随文件一起移动，无论是公开还是在身份
 ## 入门
 
 **C2PA 新手？**
-1. 阅读：主 README 中的[什么是 C2PA？](../README_zh-Hans.md#什么是-c2pa)
+1. 阅读：主 README 中的[什么是 C2PA？](README.md#什么是-c2pa)
 2. 尝试：[验证示例](https://contentcredentials.org/verify)
-3. 学习：[快速入门指南](Quick_Start_Guide_zh-Hans.md)
-4. 构建：查看[工具和库](../README_zh-Hans.md#工具和库)
+3. 学习：[快速入门指南](quick-start.md)
+4. 构建：查看[工具和库](README.md#工具和库)
 
 **想要贡献？**
-- 参见：[CONTRIBUTING.md](CONTRIBUTING.md)
+- 参见：[CONTRIBUTING.md](../../CONTRIBUTING.md)
 - 翻译规范
 - 向 awesome-c2pa 添加资源
 - 分享用例

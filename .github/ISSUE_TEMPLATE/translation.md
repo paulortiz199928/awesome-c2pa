@@ -51,8 +51,8 @@ assignees: ''
 **Translation Scope:**
 - [ ] Full C2PA Specification (doc/C2PA_Specification.pdf)
 - [ ] README.md
-- [ ] FAQ.md
-- [ ] Quick Start Guide
+- [ ] faq.md
+- [ ] quick-start.md
 - [ ] Other (specify: )
 
 **Your Qualifications:**

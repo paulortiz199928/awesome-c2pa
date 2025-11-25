@@ -2,7 +2,7 @@
 
 > C2PA（内容来源和真实性联盟）资源精选列表，包括多语言规范、工具、库和学习材料。
 
-**[English](README.md) | 简体中文**
+**[English](../../README.md) | 简体中文 | [繁體中文](../zh-Hant/README.md) | [日本語](../ja/README.md) | [한국어](../ko/README.md) | [Deutsch](../de/README.md) | [Français](../fr/README.md) | [Русский](../ru/README.md)**
 
 C2PA 是一个开放的技术标准，为发布者、创作者和消费者提供追溯不同类型媒体来源的能力。在 AI 生成内容的时代，C2PA 帮助验证内容的真实性和来源。
 
@@ -46,18 +46,18 @@ C2PA 规范 2.2 版本提供多语言版本。这些翻译帮助全球开发者�
 
 | 语言 | 文档 | 状态 | 方法 | 最后更新 |
 |----------|----------|--------|--------|--------------|
-| 🇬🇧 英语 | [C2PA 规范 2.2](docs/specifications/C2PA_Specification.pdf) | ✅ 官方版本 | C2PA 组织 | 2025年5月 |
-| 🇨🇳 简体中文 | [C2PA 规范 2.2](docs/specifications/C2PA_Specification_zh-Hans.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
-| 🇯🇵 日本語 | [C2PA 仕様 2.2](docs/specifications/C2PA_Specification_ja.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
-| 🇩🇪 Deutsch | [C2PA Spezifikation 2.2](docs/specifications/C2PA_Specification_de.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
-| 🇫🇷 Français | [Spécification C2PA 2.2](docs/specifications/C2PA_Specification_fr.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
+| 🇬🇧 英语 | [C2PA 规范 2.2](../../docs/specifications/C2PA_Specification.pdf) | ✅ 官方版本 | C2PA 组织 | 2025年5月 |
+| 🇨🇳 简体中文 | [C2PA 规范 2.2](../../docs/specifications/C2PA_Specification_zh-Hans.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
+| 🇯🇵 日本語 | [C2PA 仕様 2.2](../../docs/specifications/C2PA_Specification_ja.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
+| 🇩🇪 Deutsch | [C2PA Spezifikation 2.2](../../docs/specifications/C2PA_Specification_de.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
+| 🇫🇷 Français | [Spécification C2PA 2.2](../../docs/specifications/C2PA_Specification_fr.pdf) | 🔄 测试版 | AI + 审核 | 2025 |
 | 🇰🇷 한국어 | 即将推出 | 🚧 计划中 | - | - |
 | 🇪🇸 Español | 即将推出 | 🚧 计划中 | - | - |
 | 🇵🇹 Português | 即将推出 | 🚧 计划中 | - | - |
 
 > **翻译说明**：非英语翻译由 AI 辅助（DeepL）并经过社区审核。虽然我们力求准确，但可能存在错误。鼓励母语者[报告问题](https://github.com/paulortiz199928/awesome-c2pa/issues/new?template=translation.md)或提交更正。英文版本仍是权威参考。
 
-**快速导航**：[查看所有规范 →](docs/README.md)
+**快速导航**：[查看所有规范 →](../../docs/README.md)
 
 ---
 
@@ -72,9 +72,9 @@ C2PA 规范 2.2 版本提供多语言版本。这些翻译帮助全球开发者�
 - ✅ 保护创作者署名和知识产权
 
 **想深入了解？**
-- 📖 [5分钟快速入门指南](docs/Quick_Start_Guide_zh-Hans.md) - 立即动手实践
-- ❓ [完整常见问题](docs/FAQ_zh-Hans.md) - 25+ 个详细问题解答
-- 📚 [技术规范](docs/README.md) - 深入了解标准
+- 📖 [5分钟快速入门指南](quick-start.md) - 立即动手实践
+- ❓ [完整常见问题](faq.md) - 25+ 个详细问题解答
+- 📚 [技术规范](../../docs/README.md) - 深入了解标准
 
 ---
 
@@ -106,7 +106,7 @@ C2PA 为媒体文件添加加密签名的元数据（"清单"），包含来源�
 **成本**：标准和工具免费。证书费用：约 50-500 美元/年。
 </details>
 
-**[→ 查看全部 25+ 个常见问题](docs/FAQ_zh-Hans.md)** 涵盖技术细节、隐私、安全和采用情况。
+**[→ 查看全部 25+ 个常见问题](faq.md)** 涵盖技术细节、隐私、安全和采用情况。
 
 ---
 
@@ -165,7 +165,7 @@ C2PA 为媒体文件添加加密签名的元数据（"清单"），包含来源�
 
 ### 教程
 
-- [C2PA 快速入门指南](docs/Quick_Start_Guide_zh-Hans.md) - C2PA 实现的 5 分钟介绍
+- [C2PA 快速入门指南](quick-start.md) - C2PA 实现的 5 分钟介绍
 - [C2PA 开发者文档](https://opensource.contentauthenticity.org/docs) - 官方入门指南和文档
 - [C2PA 开发者教程](https://opensource.contentauthenticity.org/docs/getting-started) - 分步实现教程
 
@@ -241,7 +241,7 @@ C2PA 为媒体文件添加加密签名的元数据（"清单"），包含来源�
 
 ### 为本项目做贡献
 
-我们欢迎贡献！查看我们的[贡献指南](CONTRIBUTING.md)了解详情：
+我们欢迎贡献！查看我们的[贡献指南](../../CONTRIBUTING.md)了解详情：
 - 添加新资源
 - 翻译规范
 - 改进文档
@@ -251,7 +251,7 @@ C2PA 为媒体文件添加加密签名的元数据（"清单"），包含来源�
 
 ## 📋 贡献
 
-欢迎贡献！请先阅读我们的[贡献指南](CONTRIBUTING.md)。
+欢迎贡献！请先阅读我们的[贡献指南](../../CONTRIBUTING.md)。
 
 ### 如何贡献
 

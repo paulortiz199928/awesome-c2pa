@@ -1,6 +1,6 @@
-# Internal project management files
-.github-setup.md
-PROMOTION.md
+# Internal project management files (not tracked in git)
+# These files are for local development only
+.internal/
 claude.md
 
 # Claude Code configuration

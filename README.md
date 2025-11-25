@@ -2,7 +2,7 @@
 
 > A curated list of C2PA (Coalition for Content Provenance and Authenticity) resources, including multi-language specifications, tools, libraries, and learning materials.
 
-**English | [简体中文](README_zh-Hans.md)**
+**English | [简体中文](i18n/zh-Hans/README.md) | [繁體中文](i18n/zh-Hant/README.md) | [日本語](i18n/ja/README.md) | [한국어](i18n/ko/README.md) | [Deutsch](i18n/de/README.md) | [Français](i18n/fr/README.md) | [Русский](i18n/ru/README.md)**
 
 C2PA is an open technical standard providing publishers, creators, and consumers the ability to trace the origin of different types of media. In the age of AI-generated content, C2PA helps verify content authenticity and provenance.
 
@@ -71,8 +71,8 @@ The C2PA specification version 2.2 is available in multiple languages. These tra
 - ✅ Protect creator attribution and intellectual property
 
 **Want to dive deeper?**
-- 📖 [5-Minute Quick Start Guide](docs/Quick_Start_Guide.md) - Get hands-on immediately
-- ❓ [Complete FAQ](docs/FAQ.md) - 25+ detailed questions answered
+- 📖 [5-Minute Quick Start Guide](docs/guides/quick-start.md) - Get hands-on immediately
+- ❓ [Complete FAQ](docs/guides/faq.md) - 25+ detailed questions answered
 - 📚 [Technical Specifications](docs/README.md) - Deep dive into the standard
 
 ---
@@ -105,7 +105,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 **Cost**: The standard and tools are free. Certificate fees: ~$50-500/year.
 </details>
 
-**[→ View all 25+ FAQs](docs/FAQ.md)** covering technical details, privacy, security, and adoption.
+**[→ View all 25+ FAQs](docs/guides/faq.md)** covering technical details, privacy, security, and adoption.
 
 ---
 
@@ -163,7 +163,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 
 ### Tutorials
 
-- [C2PA Quick Start Guide](docs/Quick_Start_Guide.md) - 5-minute introduction to C2PA implementation
+- [C2PA Quick Start Guide](docs/guides/quick-start.md) - 5-minute introduction to C2PA implementation
 - [C2PA Developer Documentation](https://opensource.contentauthenticity.org/docs) - Official getting started guide and documentation
 - [C2PA Developer Tutorial](https://opensource.contentauthenticity.org/docs/getting-started) - Step-by-step implementation tutorial
 

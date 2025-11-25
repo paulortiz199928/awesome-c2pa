@@ -1,6 +1,6 @@
 # C2PA Specification - Multi-language Documentation
 
-**📍 Navigation:** [← Main](../README.md) | [Quick Start →](Quick_Start_Guide.md) | [FAQ →](FAQ.md)
+**📍 Navigation:** [← Main](../README.md) | [Quick Start →](guides/quick-start.md) | [FAQ →](guides/faq.md)
 
 This directory contains the official C2PA (Coalition for Content Provenance and Authenticity) specification version 2.2 in multiple languages.
 

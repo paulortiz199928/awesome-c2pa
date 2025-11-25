@@ -101,7 +101,7 @@ We welcome translations of the C2PA specification to new languages!
 #### Translation Process
 
 1. **Download the original**
-   - Get the [official English PDF](doc/C2PA_Specification.pdf)
+   - Get the [official English PDF](docs/specifications/C2PA_Specification.pdf)
 
 2. **Create your translation**
    - Maintain technical accuracy
@@ -116,10 +116,10 @@ We welcome translations of the C2PA specification to new languages!
    - Verify all terms are consistently translated
 
 4. **Submit your translation**
-   - Name the file: `C2PA_Specification [language-code].pdf`
-     - Examples: `C2PA_Specification fr.pdf`, `C2PA_Specification ko.pdf`
-   - Place it in the `doc/` directory
-   - Update `README.md` and `doc/README.md` with the new language
+   - Name the file: `C2PA_Specification_[language-code].pdf`
+     - Examples: `C2PA_Specification_fr.pdf`, `C2PA_Specification_ko.pdf`
+   - Place it in the `docs/specifications/` directory
+   - Update `README.md` and `docs/README.md` with the new language
    - Create a Pull Request with:
      - Title: "Add [Language] translation of C2PA specification"
      - Description: Translation method, reviewers, any notes
