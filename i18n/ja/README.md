@@ -1,3 +1,21 @@
+---
+title: コンテンツ来歴と真正性の標準
+description: C2PA コンテンツ来歴と真正性に関する包括的なガイド
+template: splash
+hero:
+  title: C2PA 百科事典
+  tagline: C2PA コンテンツ来歴と真正性に関する包括的なガイド
+  actions:
+    - text: クイックスタート
+      link: /ja/getting-started/quick-start/
+      icon: right-arrow
+      variant: primary
+    - text: 仕様を表示
+      link: /specifications/
+      icon: external
+      variant: secondary
+---
+
 # Awesome C2PA [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > C2PA（Coalition for Content Provenance and Authenticity）に関する厳選されたリソースのリスト。多言語仕様、ツール、ライブラリ、学習教材を含みます。

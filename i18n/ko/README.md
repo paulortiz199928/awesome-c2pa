@@ -1,3 +1,21 @@
+---
+title: 콘텐츠 출처 및 진위성 표준
+description: C2PA 콘텐츠 출처 및 진위성 종합 가이드
+template: splash
+hero:
+  title: C2PA 백과
+  tagline: C2PA 콘텐츠 출처 및 진위성 종합 가이드
+  actions:
+    - text: 빠른 시작
+      link: /ko/getting-started/quick-start/
+      icon: right-arrow
+      variant: primary
+    - text: 사양 보기
+      link: /specifications/
+      icon: external
+      variant: secondary
+---
+
 # Awesome C2PA [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > 다국어 규격, 도구, 라이브러리 및 학습 자료를 포함한 C2PA(Coalition for Content Provenance and Authenticity) 리소스 모음입니다.

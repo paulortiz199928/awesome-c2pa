@@ -1,3 +1,21 @@
+---
+title: Content-Herkunft und Authentizitätsstandard
+description: Umfassender Leitfaden zu C2PA Content-Herkunft und Authentizität
+template: splash
+hero:
+  title: C2PA Enzyklopädie
+  tagline: Umfassender Leitfaden zu C2PA Content-Herkunft und Authentizität
+  actions:
+    - text: Schnellstart
+      link: /de/getting-started/quick-start/
+      icon: right-arrow
+      variant: primary
+    - text: Spezifikationen anzeigen
+      link: /specifications/
+      icon: external
+      variant: secondary
+---
+
 # Awesome C2PA [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Eine kuratierte Liste von C2PA (Coalition for Content Provenance and Authenticity) Ressourcen, einschließlich mehrsprachiger Spezifikationen, Tools, Bibliotheken und Lernmaterialien.

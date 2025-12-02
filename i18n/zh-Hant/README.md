@@ -1,3 +1,21 @@
+---
+title: 內容溯源與真實性標準
+description: C2PA 內容來源與真實性標準綜合指南
+template: splash
+hero:
+  title: C2PA 百科
+  tagline: C2PA 內容來源與真實性標準綜合指南
+  actions:
+    - text: 快速入門
+      link: /zh-tw/getting-started/quick-start/
+      icon: right-arrow
+      variant: primary
+    - text: 檢視規範
+      link: /specifications/
+      icon: external
+      variant: secondary
+---
+
 # Awesome C2PA [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > C2PA(內容來源與真實性聯盟)資源精選清單,包含多語言規範、工具、程式庫和學習資料。
