@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [C2PA Viewer](https://c2paviewer.com) - Developer focused tool to view raw C2PA manifests
 ---
 
 ## 📖 Learning Resources
