@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [AttestTrail C2PA Viewer](https://attesttrail.com/c2pa-viewer) - Web-based C2PA verification tool with signer trust interpretation and provenance reports
 ---
 
 ## 📖 Learning Resources
@@ -196,6 +197,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 - [C2PA Official Website](https://c2pa.org) - News, updates, and technical resources
 - [Adobe Content Authenticity Blog](https://blog.adobe.com/en/topics/content-authenticity) - Industry insights and use cases
 - [Understanding C2PA Manifests](https://opensource.contentauthenticity.org/docs/manifest) - Technical deep dive
+- [How C2PA Content Credentials Work](https://attesttrail.com/blog/how-c2pa-works) - Technical walkthrough of manifests, signatures, hard bindings, and trust validation
 
 ---
 
@@ -208,6 +210,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 - **Social Media**: Content provenance on platforms (exploring)
 - **AI Image Generators**: Labeling AI-generated content (Midjourney, DALL-E)
 - **Stock Photography**: Proving original authorship (Adobe Stock, Shutterstock)
+- **Verification APIs**: [AttestTrail](https://attesttrail.com/c2pa-api) provides API-based C2PA verification with trust policy and moderation-oriented decision outputs
 
 
 ## 🏢 Organizations & Ecosystem
