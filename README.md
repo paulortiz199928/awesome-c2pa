@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [ChronoVerify](https://chronoverify.com) - Hosted API and free web tool that validates C2PA Content Credentials against the official trust lists, reads EXIF and XMP, and returns one typed verdict. Works on any image, signed or not.
 ---
 
 ## 📖 Learning Resources
