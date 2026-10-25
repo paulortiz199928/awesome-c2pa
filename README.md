@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [Remove AI Meta](https://removeaimeta.com) - Web tool that checks images for C2PA / Content Credentials and AI-generation metadata and strips them in the browser.
 ---
 
 ## 📖 Learning Resources
