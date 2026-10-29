@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [Tellmark checker](https://tellmark.si/check) - Free in-browser checker for AI images: lists any C2PA manifest in a JPEG, PNG or WebP and finds Tellmark marks from an invisible watermark when the manifest has been stripped. The file is never uploaded
 ---
 
 ## 📖 Learning Resources
