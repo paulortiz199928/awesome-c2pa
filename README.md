@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [Retrace](https://github.com/juw12/retrace) - Open-source local app (Python standard library) that reads C2PA Content Credentials and IPTC AI-generated flags from images, alongside generator metadata, with a [web demo](https://juw12.github.io/retrace/)
 ---
 
 ## 📖 Learning Resources
