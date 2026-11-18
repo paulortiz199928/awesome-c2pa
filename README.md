@@ -175,6 +175,7 @@ C2PA adds cryptographically signed metadata ("manifests") to media files contain
 ## 🌐 Applications
 
 - [Content Credentials Verify](https://contentcredentials.org/verify) - Official web tool for verifying C2PA content
+- [isGenAI C2PA checker](https://isgenai.com/tools/c2pa-checker) - Free web tool that reads C2PA manifests and reports cryptographic validation and signer trust as separate findings, alongside IPTC AI labels
 ---
 
 ## 📖 Learning Resources
